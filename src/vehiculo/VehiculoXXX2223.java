@@ -5,39 +5,82 @@ package vehiculo;
  *
  * @author 
  */
+/**
+ * Clase que representa un vehículo con nombre, precio, precio con IVA y stock.
+ */
 public class VehiculoXXX2223 {
 
+    /**
+     * Devuelve el nombre del vehículo.
+     *
+     * @return El nombre del vehículo.
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     * Establece el nombre del vehículo.
+     *
+     * @param nombre El nombre del vehículo.
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    /**
+     * Devuelve el precio del vehículo sin IVA.
+     *
+     * @return El precio del vehículo sin IVA.
+     */
     public double getPrecio() {
         return precio;
     }
 
+    /**
+     * Establece el precio del vehículo sin IVA.
+     *
+     * @param precio El precio del vehículo sin IVA.
+     */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
-    public double getPrecioIVA() {
-        return precioIVA;
-    }
+    /**
+     * Devuelve el precio del vehículo con IVA.
+     *
+     * @return El precio del vehículo con IVA.
+*/
+public double getPrecioIVA() {
+return precioIVA;
+}
+     /**
+ * Establece el precio del vehículo con IVA.
+ *
+ * @param precioIVA El precio del vehículo con IVA.
+ */
+public void setPrecioIVA(double precioIVA) {
+    this.precioIVA = precioIVA;
+}
 
-    public void setPrecioIVA(double precioIVA) {
-        this.precioIVA = precioIVA;
-    }
+/**
+ * Devuelve el stock actual de vehículos disponibles.
+ *
+ * @return El stock actual de vehículos disponibles.
+ */
+public int getStock() {
+    return stock;
+}
 
-    public int getStock() {
-        return stock;
-    }
+/**
+ * Establece el stock de vehículos disponibles.
+ *
+ * @param stock El stock de vehículos disponibles.
+ */
+public void setStock(int stock) {
+    this.stock = stock;
+}
 
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
 
     private String nombre;
     private double precio;
